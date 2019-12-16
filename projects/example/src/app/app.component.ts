@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  data: string = '';
   title = 'example';
+
+
+  onContentChange(data) {
+    this.data = data;
+  }
 }

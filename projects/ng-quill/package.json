@@ -1,6 +1,10 @@
 {
-  "name": "ng-quill",
-  "version": "0.0.1",
+  "name": "ng-quill-simple",
+  "version": "0.0.6",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AhmedMahmoud2012/ng-quill.git"
+  },
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"

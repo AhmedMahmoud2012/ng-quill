@@ -1,24 +1,37 @@
 # NgQuill
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+this is light version to use quill in your angular project
 
-## Code scaffolding
+## How to use 
 
-Run `ng generate component component-name --project ng-quill` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-quill`.
-> Note: Don't forget to add `--project ng-quill` or else it will be added to the default project in your `angular.json` file. 
+Run `npm install ng-quill-simple` from your terminal and after that import  NgQuillModule into your module 
 
-## Build
+`import { NgQuillModule } from 'ng-quill-simple'`
 
-Run `ng build ng-quill` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+@NgModule({
+    declarations: [],
+    imports: [
+        NgQuillModule,
+    ],
+    exports: []
+})
+```
 
-## Publishing
+## Right now you have 2 components 
 
-After building your library with `ng build ng-quill`, go to the dist folder `cd dist/ng-quill` and run `npm publish`.
+Editor Component
+```
+<ng-quill-editor (onContentChange)="onChange($event)" [data]="data"> </ng-quill-editor>
 
-## Running unit tests
+```
 
-Run `ng test ng-quill` to execute the unit tests via [Karma](https://karma-runner.github.io).
+View Component
 
-## Further help
+```
+<ng-quill-view [innerHTML]="content"> </ng-quill-view>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### domSanitizer.bypassSecurityTrustHtml(content)
+
+I recommend to use `domSanitizer.bypassSecurityTrustHtml` in the view component 

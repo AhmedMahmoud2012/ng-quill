@@ -1,1 +1,5 @@
 @import "../quill.snow.css";
+
+:host ::ng-deep .ql-editor{
+    min-height: 500px;
+}
