@@ -1,12 +1,38 @@
 {
   "name": "ng-quill-simple",
   "version": "0.0.6",
+  "license": "MIT",
+  "author": {
+    "name": "Ahmed Kesha"
+  },
+  "description": "An angular component for the simple and light use of the QuillJS richt text editor.",
+  "homepage": "https://github.com/AhmedMahmoud2012/ng-quill",
   "repository": {
     "type": "git",
     "url": "git@github.com:AhmedMahmoud2012/ng-quill.git"
   },
+  "keywords": [
+    "editor",
+    "rich text",
+    "wysiwyg",
+    "angular",
+    "directive",
+    "component",
+    "quill",
+    "quilljs",
+    "angular 7",
+    "angular",
+    "angular7",
+    "ng",
+    "text editor"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Ahmed Kesha"
+    }
+  ]
 }
